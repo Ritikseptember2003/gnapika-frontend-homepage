@@ -3,9 +3,9 @@ import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const Header = ({ cartCount }) => { // Accept cartCount as a prop
+const Header = ({ cartCount }) => {
   return (
-    <header className="flex justify-between items-center p-6 bg-gray-50 shadow-md relative">
+    <header className="flex justify-between items-center p-6 bg-gray-50 shadow-md">
       <div className="flex items-center ml-4">
         <img src={logo} alt="Logo" className="h-16 sm:h-20 md:h-24" />
       </div>
@@ -18,7 +18,7 @@ const Header = ({ cartCount }) => { // Accept cartCount as a prop
           <span className="text-sm text-white bg-red-500 rounded-full px-2 py-0.5">New</span>
         </div>
         <Link to="/contact" className="hover:text-red-500">Contact Us</Link>
-        <Link to="/shopping" className="hover:text-red-500">Shopping</Link> {/* Link to the shopping page */}
+        <Link to="/shopping" className="hover:text-red-500">Shopping</Link>
       </nav>
       <div className="flex items-center space-x-4 text-2xl mr-4">
         <button className="text-gray-600 hover:text-red-500">
